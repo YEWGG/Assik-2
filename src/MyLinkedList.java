@@ -1,6 +1,7 @@
+import java.util.Comparator;
 import java.util.Iterator;
 
-public class MyLinkedList<T> implements MyList<T>{
+public class MyLinkedList<T extends Comparable<T>> implements MyList<T>{
     private MyNode<T> node;
     private int length;
     public MyLinkedList(){
@@ -133,7 +134,7 @@ public class MyLinkedList<T> implements MyList<T>{
     }
 
     @Override
-    public void sort() {
+    public void sort(Comparator<T> cmp) {
         if(node==null || node.next==null){
             return;
         }
@@ -143,7 +144,7 @@ public class MyLinkedList<T> implements MyList<T>{
         while (current != null){
             index = current.next;
             while (index != null){
-                if(((Comparable<T>)current.value).compareTo(index.value)>0){
+                if(cmp.compare(current.value, index.value)>0){
                     temp = current.value;
                     current.value = index.value;
                     index.value = temp;
@@ -152,7 +153,6 @@ public class MyLinkedList<T> implements MyList<T>{
             }
             current = current.next;
         }
-
     }
 
     @Override
