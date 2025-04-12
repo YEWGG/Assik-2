@@ -80,6 +80,8 @@ public class MyArrayList<T> implements MyList<T> {
         for (int i = index; i < length - 1; i++) {
             elements[i] = elements[i + 1];
         }
+        elements[length - 1] = null;
+        length--;
     }
 
     @Override
