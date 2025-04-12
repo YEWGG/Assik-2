@@ -1,6 +1,7 @@
+import java.util.Comparator;
 import java.util.Iterator;
 
-public class MyArrayList<T> implements MyList<T> {
+public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
     private Object[] elements;
     private int length;
 
@@ -105,17 +106,16 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     @Override
-    public void sort() {
+    public void sort(Comparator<T> cmp) {
         for (int i = 0; i < length - 1; i++) {
             for (int j = 0; j < length - i - 1; j++) {
-                if (((Comparable) elements[j]).compareTo(elements[j + 1]) > 0) {
+                if (cmp.compare((T) elements[j], (T) elements[j + 1]) > 0) {
                     Object temp = elements[j];
                     elements[j] = elements[j + 1];
                     elements[j + 1] = temp;
                 }
             }
         }
-
     }
 
     @Override
@@ -200,6 +200,7 @@ public class MyArrayList<T> implements MyList<T> {
             throw new IndexOutOfBoundsException("Index: " + index + " not found");
         }
     }
+
 }
 
 
