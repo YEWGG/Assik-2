@@ -162,6 +162,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T>{
             current.next = newNode;
         }
         length++;
+
     }
     /*
 
@@ -185,7 +186,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T>{
 
     @Override
     public void remove(int index) {
-        if(index<0 || index>=size()){
+        if(index<0 || index>size()){
             throw new IndexOutOfBoundsException();
         }
         if(index==0){
