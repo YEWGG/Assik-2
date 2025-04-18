@@ -622,4 +622,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T>{
      * @return doesn't exist.
 
      */
+    public boolean  isEmpty(){
+        return length==0;
+    }
 }
