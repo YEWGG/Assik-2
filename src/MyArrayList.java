@@ -16,6 +16,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         elements[length] = item;
         length++;
     }
+    /*
+
+     * This method add element in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just add new element in the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param item, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void set(int index, T item) {
@@ -23,6 +42,28 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         elements[index] = item;
 
     }
+    /*
+
+     * This method add element in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just add new element in the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @param item, it is the input number.
+
+     * @return doesn't exist.
+
+     */
+
 
     @Override
     public void add(int index, T item) {
@@ -35,6 +76,27 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         length++;
 
     }
+    /*
+
+     * This method add element in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just add new element in the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @param item, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void addFirst(T item) {
@@ -45,6 +107,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         elements[0] = item;
         length++;
     }
+    /*
+
+     * This method add element on first position in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just add new element on first position in the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param item, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void addLast(T item) {
@@ -53,12 +134,51 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         length++;
 
     }
+    /*
+
+     * This method add element on last position in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just add new element on last position in the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param item, it is the input number.
+
+     * @return doesn't exist.
+
+     */
+
 
     @Override
     public T get(int index) {
         checkIndex(index);
         return (T) elements[index];
     }
+    /*
+
+     * This method get element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public T getFirst() {
@@ -67,6 +187,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return (T) elements[0];
     }
+    /*
+
+     * This method get first element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public T getLast() {
@@ -75,6 +214,26 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return (T) elements[length - 1];
     }
+    /*
+
+     * This method get last element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
+
     @Override
     public void remove(int index) {
         checkIndex(index);
@@ -84,6 +243,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         elements[length - 1] = null;
         length--;
     }
+    /*
+
+     * This method remove element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just remove new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void removeFirst() {
@@ -95,6 +273,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         length--;
     }
+    /*
+
+     * This method remove first element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just remove new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void removeLast() {
@@ -104,6 +301,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         elements[length - 1] = null;
         length--;
     }
+    /*
+
+     * This method remove last element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just remove new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void sort(Comparator<T> cmp) {
@@ -117,6 +333,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
             }
         }
     }
+    /*
+
+     * This method sort array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just sort new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public int indexOf(Object object) {
@@ -127,6 +362,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return -1;
     }
+    /*
+
+     * This method get index of element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public int lastIndexOf(Object object) {
@@ -137,6 +391,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return -1;
     }
+    /*
+
+     * This method get last index of element from array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public boolean exists(Object object) {
@@ -147,6 +420,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return false;
     }
+    /*
+
+     * This method check if element exists in array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just check new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public Object[] toArray() {
@@ -156,6 +448,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         return array;
     }
+    /*
+
+     * This method convert object to array.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just convert new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public void clear() {
@@ -164,11 +475,49 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
         length = 0;
     }
+    /*
+
+     * This method clear array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just clear new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public int size() {
         return length;
     }
+    /*
+
+     * This method get size of array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
     @Override
     public Iterator<T> iterator() {
@@ -186,6 +535,25 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
             }
         };
     }
+    /*
+
+     * This method get iterator of array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just get new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
     private void increaseCapacity() {
         if (length == elements.length) {
             Object[] newElements = new Object[elements.length * 2];
@@ -195,11 +563,49 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
             elements = newElements;
         }
     }
+    /*
+
+     * This method increase capacity of array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just increase new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
     private void checkIndex(int index) {
         if (index < 0 || index >= length) {
             throw new IndexOutOfBoundsException("Index: " + index + " not found");
         }
     }
+    /*
+
+     * This method check index of array list.
+
+     * It uses another method and simple statements.
+
+     * Time complexity: 0(1).
+
+     * The algorithm just check new element from the array list.,
+
+     * resulting in constant time complexity.
+
+     *
+
+     * @param index, it is the input number.
+
+     * @return doesn't exist.
+
+     */
 
 }
 
