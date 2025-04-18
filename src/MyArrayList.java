@@ -587,6 +587,7 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
             throw new IndexOutOfBoundsException("Index: " + index + " not found");
         }
     }
+
     /*
 
      * This method check index of array list.
@@ -606,6 +607,9 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
      * @return doesn't exist.
 
      */
+    public boolean isEmpty() {
+        return length == 0;
+    }
 
 }
 
